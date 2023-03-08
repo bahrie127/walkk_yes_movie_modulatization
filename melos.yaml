@@ -1,0 +1,13 @@
+name: yes_watching_app
+
+packages:
+  # - packages/yes_watching_core
+  - packages/yes_watching_movie
+  # - packages/yes_watching_person
+  - packages/yes_watching_trending
+  # - packages/yes_watching_tv_series
+
+scripts:
+  test:
+    run: melos exec --dir-exists=test -- "flutter test"
+    description: Run `flutter test` in all packages
